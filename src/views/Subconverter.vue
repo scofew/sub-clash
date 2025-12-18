@@ -35,7 +35,7 @@
                     allow-create
                     filterable
                     @change="selectChanged"
-                    placeholder="可输入自己的后端"
+                    placeholder="http://sub.hqx.zengzhixin.com:25500/sub?"  #可输入自己的后端
                     style="width: 100%"
                 >
                   <el-option v-for="(v, k) in options.customBackend" :key="k" :label="k" :value="v"></el-option>
@@ -46,7 +46,7 @@
                     v-model="form.shortType"
                     allow-create
                     filterable
-                    placeholder="可输入其他可用短链API"
+                    placeholder="https://s.ops.ci/"       #可输入其他可用短链API
                     style="width: 100%"
                 >
                   <el-option v-for="(v, k) in options.shortTypes" :key="k" :label="k" :value="v"></el-option>
@@ -1416,6 +1416,7 @@ export default {
   }
 };
 </script>
+
 
 
 
